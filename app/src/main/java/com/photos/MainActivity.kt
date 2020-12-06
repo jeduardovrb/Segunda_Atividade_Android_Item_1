@@ -28,12 +28,6 @@ class MainActivity : AppCompatActivity() {
             adapter.addAll(photosGlobal)
         }
 
-        btn_Excluir.setOnClickListener {
-            val item = adapter.getItem(1)
-            adapter.remove(item)
-            photosGlobal.remove(item)
-        }
-
         list_Grade.setOnItemLongClickListener {
                 adapterView: AdapterView<*>, view: View, position: Int, id: Long ->
             val item = adapter.getItem(position)

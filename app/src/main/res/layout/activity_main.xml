@@ -8,17 +8,17 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Para excluir, de um clique longo no item." />
+
     <Button
         android:id="@+id/btn_adicionar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Inserir Photo" />
-
-    <Button
-        android:id="@+id/btn_Excluir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Excluir Photos" />
 
     <Button
         android:id="@+id/btn_Consultar"
