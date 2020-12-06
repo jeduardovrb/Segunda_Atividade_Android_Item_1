@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sburato.photos.com.photos.MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_add_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar foto" />
+
+    <Button
+        android:id="@+id/btn_rem_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remover foto" />
+
+    <Button
+        android:id="@+id/btn_get_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar fotos (API)" />
+
+    <ListView
+        android:id="@+id/list_view_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
