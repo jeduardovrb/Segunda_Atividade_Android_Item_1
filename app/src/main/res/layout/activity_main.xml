@@ -18,13 +18,13 @@
         android:id="@+id/btn_adicionar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Inserir Photo" />
+        android:text="Incluir" />
 
     <Button
         android:id="@+id/btn_Consultar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Consultar Photos" />
+        android:text="Consultar" />
 
     <ListView
         android:id="@+id/list_Grade"
