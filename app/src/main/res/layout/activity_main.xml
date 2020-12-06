@@ -12,19 +12,19 @@
         android:id="@+id/btn_add_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adicionar foto" />
+        android:text="Inserir Photo" />
 
     <Button
         android:id="@+id/btn_rem_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Remover foto" />
+        android:text="Excluir Photos" />
 
     <Button
         android:id="@+id/btn_get_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buscar fotos (API)" />
+        android:text="Consultar Photos" />
 
     <ListView
         android:id="@+id/list_view_photo"

@@ -11,10 +11,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastrar Fotos"
-        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:text="Cadastrar de Photos"
         android:textSize="21sp"
-        android:layout_marginBottom="15dp" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txt_album_id"
@@ -49,9 +49,9 @@
         android:hint="Thumbnail URL" />
 
     <Button
+        android:id="@+id/btn_inserir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="inserir"
-        android:id="@+id/btn_inserir" />
+        android:text="Incluir" />
 
 </LinearLayout>
