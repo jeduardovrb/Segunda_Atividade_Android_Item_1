@@ -4,30 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sburato.photos.com.photos.MainActivity"
+    tools:context="com.photos.MainActivity"
     android:orientation="vertical"
     android:padding="16dp">
 
     <Button
-        android:id="@+id/btn_add_photo"
+        android:id="@+id/btn_adicionar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Inserir Photo" />
 
     <Button
-        android:id="@+id/btn_rem_photo"
+        android:id="@+id/btn_Excluir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Excluir Photos" />
 
     <Button
-        android:id="@+id/btn_get_photo"
+        android:id="@+id/btn_Consultar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Consultar Photos" />
 
     <ListView
-        android:id="@+id/list_view_photo"
+        android:id="@+id/list_Grade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

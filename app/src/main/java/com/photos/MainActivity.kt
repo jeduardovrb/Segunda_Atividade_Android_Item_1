@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import androidx.appcompat.app.AppCompatActivity
-import com.photos.R
 import kotlinx.android.synthetic.main.activity_main.*
 import photosGlobal
 
@@ -15,27 +14,27 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val adapter = PhotoAdapter(this)
-        list_view_photo.adapter = adapter
+        list_Grade.adapter = adapter
 
-        btn_add_photo.setOnClickListener {
+        btn_adicionar.setOnClickListener {
             val intent = Intent(this, CadastroActivity::class.java)
             startActivity(intent)
         }
 
-        btn_get_photo.setOnClickListener {
+        btn_Consultar.setOnClickListener {
             this.carregarPhotos()
-            val adapter = list_view_photo.adapter as PhotoAdapter
+            val adapter = list_Grade.adapter as PhotoAdapter
             adapter.clear()
             adapter.addAll(photosGlobal)
         }
 
-//        btn_rem_photo.setOnClickListener {
-//            val item = adapter.getItem(position)
-//            adapter.remove(item)
-//            photosGlobal.remove(item)
-//        }
+        btn_Excluir.setOnClickListener {
+            val item = adapter.getItem(1)
+            adapter.remove(item)
+            photosGlobal.remove(item)
+        }
 
-        list_view_photo.setOnItemLongClickListener {
+        list_Grade.setOnItemLongClickListener {
                 adapterView: AdapterView<*>, view: View, position: Int, id: Long ->
             val item = adapter.getItem(position)
             adapter.remove(item)
@@ -46,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        val adapter = list_view_photo.adapter as PhotoAdapter
+        val adapter = list_Grade.adapter as PhotoAdapter
         adapter.clear()
         adapter.addAll(photosGlobal)
     }
