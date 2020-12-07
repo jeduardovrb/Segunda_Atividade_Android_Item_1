@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.photos.CadastroActivity"
-    android:orientation="vertical" android:padding="16dp">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
         android:layout_width="match_parent"
@@ -50,8 +51,10 @@
 
     <Button
         android:id="@+id/btn_inserir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
         android:text="Incluir"
         android:textAllCaps="false" />
 
