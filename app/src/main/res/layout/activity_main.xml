@@ -18,13 +18,15 @@
         android:id="@+id/btn_adicionar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Incluir" />
+        android:text="Incluir"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_Consultar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Consultar" />
+        android:text="Consultar"
+        android:textAllCaps="false" />
 
     <ListView
         android:id="@+id/list_Grade"

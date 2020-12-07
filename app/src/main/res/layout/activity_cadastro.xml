@@ -52,6 +52,7 @@
         android:id="@+id/btn_inserir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Incluir" />
+        android:text="Incluir"
+        android:textAllCaps="false" />
 
 </LinearLayout>
