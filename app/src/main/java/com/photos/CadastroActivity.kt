@@ -26,9 +26,9 @@ class CadastroActivity : AppCompatActivity() {
                 txt_url.text.clear()
                 txt_thumbnail_url.text.clear()
             } else {
-                txt_album_id.error = if (txt_album_id.text.isEmpty()) "Preencha o id do album" else null
-                txt_id.error = if (txt_id.text.isEmpty()) "Preencha o id da foto" else null
-                txt_title.error = if (txt_title.text.isEmpty()) "Preencha o titulo" else null
+                txt_album_id.error = if (txt_album_id.text.isEmpty()) "Digitar o id do album" else null
+                txt_id.error = if (txt_id.text.isEmpty()) "Digitar o id da foto" else null
+                txt_title.error = if (txt_title.text.isEmpty()) "Digitar o titulo" else null
             }
 
             finish();
