@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.AdapterView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import photosGlobal
+import photosG
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,14 +25,14 @@ class MainActivity : AppCompatActivity() {
             this.carregarPhotos()
             val adapter = list_Grade.adapter as PhotoAdapter
             adapter.clear()
-            adapter.addAll(photosGlobal)
+            adapter.addAll(photosG)
         }
 
         list_Grade.setOnItemLongClickListener {
-                adapterView: AdapterView<*>, view: View, position: Int, id: Long ->
+            adapterView: AdapterView<*>, view: View, position: Int, id: Long ->
             val item = adapter.getItem(position)
             adapter.remove(item)
-            photosGlobal.remove(item)
+            photosG.remove(item)
             return@setOnItemLongClickListener true
         }
     }
@@ -41,14 +41,14 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         val adapter = list_Grade.adapter as PhotoAdapter
         adapter.clear()
-        adapter.addAll(photosGlobal)
+        adapter.addAll(photosG)
     }
 
     fun carregarPhotos() {
         try {
             val fotos = HttpService().execute().get()
-            photosGlobal.clear()
-            photosGlobal.addAll(fotos)
+            photosG.clear()
+            photosG.addAll(fotos)
         } catch (e: InterruptedException) {
             e.printStackTrace()
         }

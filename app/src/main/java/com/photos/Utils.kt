@@ -1,3 +1,3 @@
 import com.photos.Photo
 
-val photosGlobal = mutableListOf<Photo>()
+val photosG = mutableListOf<Photo>()

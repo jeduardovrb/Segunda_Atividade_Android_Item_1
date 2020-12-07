@@ -2,9 +2,8 @@ package com.photos
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.photos.R
 import kotlinx.android.synthetic.main.activity_cadastro.*
-import photosGlobal
+import photosG
 
 class CadastroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +19,7 @@ class CadastroActivity : AppCompatActivity() {
 
             if (albumId.isNotEmpty() && id.isNotEmpty() && title.isNotEmpty()) {
                 val photo = Photo(id.toInt(), albumId.toInt(), title, url, thumbnailUrl)
-                photosGlobal.add(photo)
+                photosG.add(photo)
                 txt_album_id.text.clear()
                 txt_id.text.clear()
                 txt_title.text.clear()

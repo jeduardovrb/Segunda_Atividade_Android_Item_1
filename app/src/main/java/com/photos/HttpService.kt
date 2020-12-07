@@ -17,22 +17,22 @@ class HttpService() : AsyncTask<Void?, Void?, List<Photo>>() {
         try {
             val url = URL("https://jsonplaceholder.typicode.com/photos")
 
-            val httpClient = url.openConnection() as HttpURLConnection
-            httpClient.requestMethod = "GET"
-            httpClient.setRequestProperty("Content-type", "application/json");
-            httpClient.setRequestProperty("Accept", "application/json");
-            if (httpClient.responseCode == HttpURLConnection.HTTP_OK) {
+            val http = url.openConnection() as HttpURLConnection
+            http.requestMethod = "GET"
+            http.setRequestProperty("Content-type", "application/json");
+            http.setRequestProperty("Accept", "application/json");
+            if (http.responseCode == HttpURLConnection.HTTP_OK) {
                 try {
-                    val stream = BufferedInputStream(httpClient.inputStream)
+                    val stream = BufferedInputStream(http.inputStream)
                     val bufferedReader = BufferedReader(InputStreamReader(stream))
                     bufferedReader.forEachLine { resposta.append(it) }
                 } catch (e: Exception) {
                     e.printStackTrace()
                 } finally {
-                    httpClient.disconnect()
+                    http.disconnect()
                 }
             } else {
-                println("ERROR ${httpClient.responseCode}")
+                println("ERROR ${http.responseCode}")
             }
         } catch (e: MalformedURLException) {
             e.printStackTrace()
